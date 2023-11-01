@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8" />
+<!--  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+  <meta name="description" content="RSS value for value album." />
+  <title>Binaural Subliminal</title>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Process">
+  <meta name="twitter:description" content="RSS feed music album.">
+  <meta name="twitter:image" content="https://binauralsubliminal.com/album_msp/process_album.png">
+  <meta name="twitter:site" content="@SONICLABOR">
+  <meta name="twitter:creator" content="@SONICLABOR">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="The Process">
+  <meta property="og:description" content="RSS feed music album.">
+  <meta property="og:image" content="https://binauralsubliminal.com/album_msp/process_album.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://binauralsubliminal.com/album_msp/index.html">
+
+  <!-- Tumblr Open Graph -->
+  <meta property="tumblr:blog_name" content="liquidsentientdeity">
+  <meta property="tumblr:post_type" content="link">
+  <meta property="og:title" content="The Process">
+  <meta property="og:description" content="RSS feed music album.">
+  <meta property="og:image" content="https://binauralsubliminal.com/album_msp/process_album.png">
+
+  <meta property="og:url" content="https://binauralsubliminal.com/album_msp/index.html">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/bc8430bc70.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+  
+  <div class="appHeader fade-in">
+    <img src="" width="100px" height="100px" onload="this.style.display='block'">
+    <h1 class="appHeader_author"></h1>
+  </div>
+  <div class="appHeaderContainer">
+    <h5 class="appHeader_title"></h4>
+    <p class="appHeader_description"></p>
+  </div>
+
+	<div class="cardList">
+		<button class="cardList__btn btn btn--left">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-left"></use>
+				</svg>
+			</div>
+		</button>
+
+		<div class="cards__wrapper">
+			<div class="card current--card">
+				<div class="card__image">
+					<img src="" alt="" />
+				</div>
+			</div>
+
+			<div class="card next--card">
+				<div class="card__image">
+					<img src="" alt="" />
+				</div>
+			</div>
+
+			<div class="card previous--card">
+				<div class="card__image">
+					<img src="" alt="" />
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<button class="cardList__btn btn btn--right">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-right"></use>
+				</svg>
+			</div>
+		</button>
+	</div>
+
+	<div class="infoList">
+		<div class="info__wrapper">
+			<div class="info current--info">
+				<h1 class="text name"></h1>
+				<h4 class="text location"></h4>
+				<p class="text description"></p>
+			</div>
+
+			<div class="info next--info">
+				<h1 class="text name"></h1>
+				<h4 class="text location"></h4>
+				<p class="text description"></p>
+			</div>
+
+			<div class="info previous--info">
+				<h1 class="text name"></h1>
+				<h4 class="text location"></h4>
+				<p class="text description"></p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="app__bg">
+		<div class="app__bg__image current--image">
+			<img src="" alt="" />
+		</div>
+		<div class="app__bg__image next--image">
+			<img src="" alt="" />
+		</div>
+		<div class="app__bg__image previous--image">
+			<img src="" alt="" />
+		</div>
+	</div>
+</div>
+
+<div id="playButton" class="play-button">
+  <img id="playIcon" class="player-buttons" src="play.png">
+</div>
+
+<div class="video-player-buttons">
+  <button id="videoPlayButton" class="video-button">Video Player</button>
+  <button id="videoStopButton" class="video-button">Stop Video Player</button>
+</div>
+
+<div class="progress-container">
+  <div id="current-time" class="current-time spaced">00:00</div>
+  <div id="progress-bar-container" class="spaced">
+    <div id="progress"></div>
+  </div>
+  <div id="total-time" class="total-time spaced">00:00</div>
+</div>
+
+<audio id="audioPlayer" class="hidden" src=""></audio>
+<div id="video-div" class="youtube-player hidden" style="overflow: hidden;">
+  <iframe id="youtubePlayer" src="" allowfullscreen></iframe><!-- https://youtube.com/embed/YT - ID -->
+</div>
+
+
+
+
+<div class="loading__wrapper">
+	<div class="loader--text"><h2>Loading...</h2></div>
+	<div class="loader">
+		<span></span>
+	</div>
+</div>
+<!--
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="player"></div>
+  </div>
+</div>
+-->
+<svg class="icons" style="display: none;">
+	<symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='328 112 184 256 328 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+	<symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='184 112 328 256 184 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+</svg>
+
+
+<div class="support">
+  <a href="https://getalby.com/p/binaural_sub303" target="_blank"><i class="fa-solid fa-bolt-lightning"></i></a>
+  <a href="https://linktr.ee/soniclabor" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+  <a href="https://github.com/silconsystem" target="_blank"><i class="fab fa-github-square"></i></a>
+	<a href="https://twitter.com/SONICLABOR" target="_blank"><i class="fab fa-twitter-square"></i></a>
+	<a href="https://binauralsubliminal.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+</div>
+
+<!-- partial -->
+<script src="js/fetch.js"></script> 
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+<script src="js/script.js"></script>
+<script src="js/player.js"></script>
+<script src="js/videoPlayer.js"></script>
+
+<!-- lightning-tools now available at window.lightningTools
+<script src="https://cdn.jsdelivr.net/npm/@getalby/lightning-tools@latest/dist/index.browser.js"></script>
+
+<script type="module" src="/lightning.js"></script> -->
+</body>
+</html>
